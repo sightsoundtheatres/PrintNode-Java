@@ -22,12 +22,9 @@ jobs:
         with:
           java-version: '25'
           distribution: 'corretto'
-          cache: 'gradle'
-
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v6
+          cache: 'maven'
 
       - name: Publish package
-        run: ./gradlew publish
+        run: mvn deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

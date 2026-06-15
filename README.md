@@ -6,7 +6,7 @@ This quick start guide covers using the Java API Library. There are examples to 
 
 ## Quick Start
 
-Firstly, you will want to import `java.io.IOException`, as a lot of the methods throw IOExceptions because of the `org.apache.http` packages throw them, and are used extensively throughout PrintNode-Java. A .jar file is included in PrintNode-Java/jar/.
+Firstly, you will want to import `java.io.IOException`, as a lot of the methods throw IOExceptions because of the `org.apache.http` packages throw them, and are used extensively throughout PrintNode-Java.
 
 Here is some sample code:
 
