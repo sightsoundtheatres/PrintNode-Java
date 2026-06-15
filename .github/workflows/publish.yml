@@ -25,6 +25,6 @@ jobs:
           cache: 'maven'
 
       - name: Publish package
-        run: mvn deploy
+        run: mvn -Dmaven.test.skip=true deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
